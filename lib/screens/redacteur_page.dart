@@ -193,7 +193,7 @@ class _RedacteurPageState extends State<RedacteurPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MyAppBar(),
+      appBar: MyAppBar(title: 'page redacteur'),
       drawer: Drawer(
         child: ListView(
           children: [

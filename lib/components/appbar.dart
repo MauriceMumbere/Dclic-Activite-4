@@ -2,17 +2,15 @@
 import 'package:flutter/material.dart';
 
 class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
-  const MyAppBar({super.key});
+  final String title;
+  const MyAppBar({super.key, required this.title});
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: Colors.pink,
       // Title
-      title: const Text(
-        'Magazine Infos',
-        style: TextStyle(color: Colors.white),
-      ),
+      title: Text(title, style: TextStyle(color: Colors.white)),
       centerTitle: true,
       // Leading
       leading: IconButton(

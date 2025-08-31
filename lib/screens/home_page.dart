@@ -11,7 +11,7 @@ class PageAccueil extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       // AppBar
-      appBar: MyAppBar(),
+      appBar: MyAppBar(title: 'Magazine Infos'),
       // Drawer
       drawer: MyDrawer(),
       // Body
